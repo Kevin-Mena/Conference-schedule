@@ -105,7 +105,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo" ></a>
 
-- [Live Demo Link](https://https://kevin-mena.github.io/Module1-capstone-project/index.html/)
+- [Live Demo Link](https://kevin-mena.github.io/Module1-capstone-project/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
