@@ -59,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [ChatGPT Forum Page] <a name="about-project"></a>
 
-**[ChatGPT Forum Page]** is a simple forum website where developers can interact and get updates,join and get news about an upcoming developers forum.This website only represent a mock webssite and hopefully will grow to an actual website in future.
+**[ChatGPT Forum Page]** is a simple forum website where developers can interact and get updates,join and get news about an upcoming developers forum.This website only represent a mock website and hopefully will grow to an actual website in future.
 
 ## 🛠 Built With <a name="built-with"></a>
   <p>✅ HTML</p>
