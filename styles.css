@@ -35,7 +35,6 @@ html {
 }
 
 /* navigation bar styles */
-
 .nav-div {
   background-color: var(--font-color-1);
   width: 100%;
@@ -54,6 +53,10 @@ html {
   font-size: 2rem;
 }
 
+.nav-link {
+  margin-bottom: 1rem;
+}
+
 .blur {
   filter: blur(2px);
 }
@@ -68,7 +71,6 @@ li {
   width: 100%;
   text-align: left;
   font-size: 1.5rem;
-  padding: 2rem;
   height: auto;
 }
 
@@ -77,6 +79,14 @@ li .nav-link {
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.nav-link-mob {
+  color: var(--clr-white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
 }
 
 .close-btn {
@@ -103,32 +113,41 @@ li .nav-link {
 }
 
 .quote {
-  color: var(--clr-white);
   font-family: var(--ff-primary);
   font-size: 2rem;
   padding: 2rem;
   text-transform: var(--text-transform-1);
   font-weight: 400;
-  padding-top: 7rem;
+  padding-top: 5rem;
+  background-image: url('./images/orange.jpeg');
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 .header-content {
-  text-transform: var(--text-transform-1);
+  text-transform: var(--text-transform-2);
   font-family: var(--ff-primary);
-  color: var(--clr-white);
-  font-size: 3rem;
-  padding: 2rem;
-  font-weight: 800;
+  font-size: 8em;
+  background-image: url(./images/orange.jpeg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .about-content {
-  text-transform: var(--text-transform-1);
+  text-transform: var(--text-transform-2);
   font-family: var(--ff-primary);
-  color: var(--clr-white);
-  font-size: 3rem;
-  padding: 2rem;
-  font-weight: 800;
-  padding-top: 1rem;
+  color: transparent;
+  font-size: 8em;
+  background-image: url(./images/pn.jpeg);
+  background-size: cover;
+  -webkit-background-clip: text;
+}
+
+.img-logo {
+  width: 10%;
+  height: auto;
 }
 
 .gpt {
@@ -136,38 +155,34 @@ li .nav-link {
 }
 
 .descr {
-  color: var(--clr-white);
+  color: var(--font-color-1);
   padding: 1rem;
-  line-height: 1rem;
   letter-spacing: var(--letter-spacing);
-  background-color: var(--font-color-1);
-  font-size: 18px;
+  font-size: 1.5rem;
   font-family: var(--ff-primary);
-  width: 90%;
   margin: 0 auto;
-  border-radius: var(--radius);
-  opacity: 0.8;
+  line-height: 1.5rem;
+  margin-left: 6rem;
 }
 
 .date {
-  color: var(--font-color-3);
-  width: 80%;
-  padding: 2rem;
+  color: var(--font-color-1);
   font-size: 2rem;
   font-family: var(--ff-primary);
   font-weight: 800;
   padding-bottom: 0;
+  margin-left: 6rem;
 }
 
 .address {
-  color: var(--font-color-3);
-  width: 80%;
-  padding: 2rem;
+  color: var(--font-color-1);
+  margin-left: 6rem;
   padding-top: 0;
   font-family: var(--font-primary);
   font-size: 1.2rem;
   font-weight: 800;
   white-space: nowrap;
+  padding-bottom: 1rem;
 }
 
 /* ================
@@ -238,10 +253,10 @@ main program section
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: auto;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 1rem;
-  background-color: rgba(120, 118, 118, 0.4);
+  background-color: rgba(110, 105, 105, 0.4);
   padding: 1rem;
   align-items: center;
   align-content: center;
@@ -370,20 +385,48 @@ section featured speakers
 }
 
 .contact {
-  color: var(--clr-white);
-  padding: 1rem;
+  color: var(--font-color-1);
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height);
   font-size: 24px;
   font-family: var(--ff-primary);
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  text-align: center;
 }
 
-.contact .email {
+.email {
   text-decoration: var(--text-decoration);
-  line-height: 1.5rem;
+  color: var(--font-color-1);
+  letter-spacing: var(--letter-spacing);
+  font-size: 24px;
+  font-family: var(--ff-primary);
+  width: 80%;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.forum-theme {
+  color: var(--font-color-1);
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  font-size: 24px;
+  font-family: var(--ff-primary);
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  background: var(--font-color-3);
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.send {
+  margin-top: 2px;
+  margin-bottom: 0;
 }
 
 .about-forum-logo,
@@ -483,13 +526,8 @@ section featured speakers
   padding-bottom: 3rem;
 }
 
-.img-logo {
-  width: 30%;
-  height: auto;
-}
-
 .img-logo:hover {
-  transform: scale(1.5);
+  transform: scale(0.9);
   transition: all 0.5s ease-in-out;
 }
 
@@ -506,8 +544,14 @@ section featured speakers
 .forum-partners {
   background-color: var(--font-color-1);
   margin-top: 2rem;
-  width: 100%;
-  height: 50vh;
+}
+
+.div-partner-img {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .gpt-logo {
@@ -520,6 +564,16 @@ section featured speakers
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
+}
+
+.about-footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  background-color: var(--font-color-1);
+  color: var(--clr-white);
 }
 
 .div-chatgpt {
@@ -577,19 +631,9 @@ section featured speakers
     display: none;
   }
 
-  /* .speaker-container {
-    display: none;
-  } */
   .speaker-container:nth-child(1) {
     display: block;
   }
-
-  /* .speaker-container:nth-child(2) {
-    display: block;
-  }
-  .speaker-container:nth-child(3) {
-    display: block;
-  } */
 
   .div-container {
     position: fixed;
@@ -605,6 +649,14 @@ section featured speakers
     transition: all 3s ease-in-out;
     cursor: pointer;
     z-index: 10;
+  }
+
+  .header-content,
+  .descr,
+  .date,
+  .address {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .show-menu {
@@ -640,7 +692,7 @@ section featured speakers
     height: 2rem;
     align-items: center;
     z-index: 10;
-    padding-right: 10%;
+    padding-right: 16%;
   }
 
   .list-social {
@@ -671,12 +723,14 @@ section featured speakers
 
   .nav-div {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
     position: sticky;
     z-index: 20;
     top: 0;
     height: 20vh;
+    align-items: center;
+    justify-content: center;
     background-color: var(--clr-white);
   }
 
@@ -701,7 +755,12 @@ section featured speakers
     white-space: nowrap;
     overflow: visible;
     text-overflow: ellipsis;
-    margin-left: 2px;
+    margin-left: 43px;
+    padding: 2px;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.1);
   }
 
   .desktop-nav .nav-link {
@@ -713,8 +772,11 @@ section featured speakers
   }
 
   .nav-logo {
-    width: 120px;
-    height: 122px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    align-content: center;
   }
 
   /* firstchild */
@@ -727,24 +789,26 @@ section featured speakers
   /* lastchild
     */
   .last {
+    margin-right: 10rem;
     color: var(--font-color-2);
     border: 3px solid var(--font-color-2);
-    padding: 2px;
+    padding: 5px;
+    padding-bottom: 5px;
   }
 
   .quote {
-    padding-top: 4rem;
+    margin-left: 6rem;
   }
 
-  .header-content,
-  .about-content {
-    width: 50%;
+  .header-content {
+    width: 98%;
+    margin-left: 6rem;
   }
 
   .descr,
   .contact {
-    width: 60%;
-    margin-left: 1.5rem;
+    width: 80%;
+    margin-left: 6rem;
   }
 
   .main-div {
@@ -763,12 +827,8 @@ section featured speakers
     justify-content: space-between;
     flex-wrap: nowrap;
     height: 40vh;
-    width: 90%;
-
-    /*   white-space:nowrap; */
+    width: 99%;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 2rem;
   }
 
@@ -798,6 +858,14 @@ section featured speakers
     justify-content: space-between;
     height: auto;
     margin-top: 0;
+  }
+
+  .address {
+    margin-left: 6rem;
+  }
+
+  .date {
+    margin-left: 6rem;
   }
 
   .activity {
@@ -852,10 +920,9 @@ section featured speakers
 
   .partner-logo-forum {
     padding-top: 3rem;
-  }
-
-  .forum-partners {
-    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
   }
 
   .underline-about {
@@ -891,6 +958,12 @@ section featured speakers
 
   .rights {
     padding-top: 0;
+  }
+
+  .about-content {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 4em;
   }
 
   .show-more {
