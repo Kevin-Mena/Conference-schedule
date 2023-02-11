@@ -55,7 +55,6 @@ function displaySpeaker(speakerList) {
 }
 window.addEventListener('DOMContentLoaded', () => {
   displaySpeaker(myData);
-  // parse menu array
 });
 
 // set current year
