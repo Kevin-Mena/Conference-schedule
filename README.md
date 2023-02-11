@@ -85,7 +85,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Scripting</summary>
   <ul>
-    <li><a href="https://https://developer.mozilla.org">CSS</a></li>
+    <li><a href="https://https://developer.mozilla.org">JavaScript</a></li>
   </ul>
 </details>
 
