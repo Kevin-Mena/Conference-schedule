@@ -32,6 +32,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* navigation bar styles */
@@ -194,7 +195,7 @@ li .nav-link {
   background-color: var(--font-color-1);
   height: auto;
   display: block;
-  background-image: url(./images/carbon.avif);
+  background-image: url(./images/main.jpg);
 }
 
 .main-header {
