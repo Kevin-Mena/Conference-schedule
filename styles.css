@@ -666,6 +666,11 @@ section featured speakers
   .main-program-link {
     display: none;
   }
+  .header-content, .about-content {
+    max-width: 70%;
+    font-size: 4rem;
+    margin: 0 auto;
+  }
 }
 
 /*
