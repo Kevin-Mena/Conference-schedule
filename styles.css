@@ -163,6 +163,7 @@ li .nav-link {
   margin: 0 auto;
   line-height: 1.5rem;
   margin-left: 6rem;
+  border: 1px solid var(--font-color-3);
 }
 
 .date {
@@ -247,6 +248,9 @@ main program section
   justify-content: center;
   width: 100%;
   margin-top: 1.5rem;
+}
+.main {
+  background-image: url(./images/carbon.avif);
 }
 
 .activities {
